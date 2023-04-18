@@ -69,7 +69,7 @@ const Order = (props) => {
                         <Row>
                             <Col span={16}>{itemName}</Col>
                             <Col offset={4}>
-                                <Checkbox name='order' style={{height:'10px',width:'10px'}} checked={false} onChange={() => { onChange(order._id, itemName) }} disabled={firstItem.menuItem === order.menuItem ? false : true}
+                                <Checkbox name='order' style={{height:'10px',width:'10px'}} checked={false} onChange={() => { onChange(order._id, itemName) }} disabled={firstItem._id === order._id ? false : true}
                                 ></Checkbox>
                             </Col>
                         </Row>
